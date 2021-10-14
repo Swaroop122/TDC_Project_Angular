@@ -1,0 +1,57 @@
+input[type="submit"]
+{
+    color:white;
+    background-color: green;
+    border-radius: 2px;
+    width:50px;
+    height:30px;
+}
+table,td,tr{
+    padding: 10px 10px;
+}
+
+.navbar{
+    color:darkblue;
+    font-size: 25px;
+    background-color: rgb(81, 255, 0);   
+}
+a{
+    text-decoration: none;
+}
+.navbar >a:active{
+    color:red;
+    text-decoration: none;
+}
+
+.tbl
+{
+    background-color: rgb(252, 252, 252);
+}
+
+.cart
+{
+    background-color: rgb(214, 248, 242);
+}
+
+.main{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 0px;
+}
+.t1
+{
+    border:1px solid red;
+    border-collapse: collapse;
+    width: 70%;
+}
+.t1 th{
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+.t1 td, .t1 th {
+    border: 1px solid #ddd;
+    padding: 6px;
+  }

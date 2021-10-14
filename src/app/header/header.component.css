@@ -1,0 +1,13 @@
+h1 {
+    color:red;
+    font-size: 30px;
+    font-weight:bold;
+}
+
+div{
+    background-color: rgb(7, 6, 6);
+}
+
+a{
+    text-decoration: none;
+}

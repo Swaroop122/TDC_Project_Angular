@@ -1,0 +1,66 @@
+<div align="center">
+   
+    <div *ngIf="loginorhome">
+        <br>
+        <br>
+        <br>
+        <br>
+    <form [formGroup]="Logindetails" (ngSubmit)="Login()">
+    <table>
+        <tr>
+            <td>User Name:</td>
+            <td><input type="text" name="uname" formControlName="uname">
+            <div *ngIf="Logindetails.get('uname').hasError('required') && Logindetails.get('uname').touched" style="color:Red;">User Name Cannot be blank</div>
+        </td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input type="password" name="pass" formControlName="pass">
+                <div  *ngIf="Logindetails.get('pass').hasError('required') && Logindetails.get('pass').touched" style="color:Red;">Password Cannot be blank</div>
+            </td>
+        </tr>
+        <tr style="text-align: center;">
+            <td colspan="2"><input type="submit" value="Login" >
+            <div style="color:red;">{{msg}}</div></td>
+        </tr>
+    </table>
+</form>
+</div>
+<div *ngIf="!loginorhome" class="main" >
+        <div class="navbar" align="center">
+            <br>
+            <br>
+            <a [routerLink]="['/home','electronics']">Electronics</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a [routerLink]="['/home','toys']">Toys</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a [routerLink]="['/home','fashion']">Fashion</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a [routerLink]="['/home','automobile']">Automobile</a>
+            <br>
+            <br>
+            <div class="tbl" align="center">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+        <div class="cart" align="center">
+           <br><br>
+           <table class="t1">
+               <thead>
+                <tr>
+                    <th>Item Name</th>
+                    <th>Item Quantity</th>
+                    <th>Item Price</th>
+                </tr>
+               </thead>
+               <tbody>
+                   <tr *ngFor="let i of Prod">
+                       <td *ngIf="i.count>0">{{i.pname}}</td>
+                       <td *ngIf="i.count>0">{{i.count}}</td>
+                       <td *ngIf="i.count>0">{{i.price}}</td>
+                   </tr>
+                   <tr><td colspan="3" align="center"><h2>Total Price : {{Gettotal() | currency:'INR':true}}</h2></td></tr>
+               </tbody>    
+           </table>
+           <br><br>
+        </div>
+</div>
+    <br>
+</div>

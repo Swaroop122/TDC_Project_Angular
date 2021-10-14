@@ -1,0 +1,27 @@
+.t1
+{
+    border:1px solid red;
+    border-collapse: collapse;
+    width: 70%;
+}
+.t1 th{
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+.t1 td, .t1 th {
+    border: 1px solid #ddd;
+    padding: 6px;
+  }
+
+ button
+{
+    color:white;
+    background-color: rgb(14, 17, 192);
+    border-radius: 2px;
+    width:60px;
+    height:30px;
+    font-size: large;
+}

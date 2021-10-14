@@ -1,0 +1,28 @@
+[
+   {"category":"electronics","pname":"samsung","price":10000,"pid":1,"count":0}, 
+   {"category":"electronics","pname":"Apple","price":20000,"pid":2,"count":0}, 
+   {"category":"electronics","pname":"Blackberry","price":30000,"pid":3,"count":0}, 
+   {"category":"electronics","pname":"OnePlus","price":60000,"pid":4,"count":0}, 
+   {"category":"electronics","pname":"Mi","price":10000,"pid":5,"count":0}, 
+   {"category":"electronics","pname":"Lg","price":24000,"pid":6,"count":0}, 
+   {"category":"electronics","pname":"Sony","price":140000,"pid":7,"count":0}, 
+   {"category":"electronics","pname":"Vivo","price":26000,"pid":8,"count":0},
+   {"category":"toys","pname":"toy1","price":100,"pid":9,"count":0},
+   {"category":"toys","pname":"toy2","price":200,"pid":10,"count":0},
+   {"category":"toys","pname":"toy3","price":300,"pid":11,"count":0},
+   {"category":"toys","pname":"toy4","price":400,"pid":12,"count":0},
+   {"category":"toys","pname":"toy5","price":500,"pid":13,"count":0},
+   {"category":"toys","pname":"toy6","price":600,"pid":14,"count":0},
+   {"category":"fashion","pname":"shirt","price":25000,"pid":15,"count":0},
+   {"category":"fashion","pname":"shirt1","price":2000,"pid":16,"count":0},
+   {"category":"fashion","pname":"shirt2","price":5000,"pid":17,"count":0},
+   {"category":"fashion","pname":"pant1","price":200,"pid":18,"count":0},
+   {"category":"fashion","pname":"pant2","price":500,"pid":19,"count":0},
+   {"category":"automob","pname":"car","price":25000,"pid":20,"count":0},
+   {"category":"automob","pname":"Bike","price":35000,"pid":21,"count":0},
+   {"category":"automob","pname":"buss","price":45000,"pid":22,"count":0},
+   {"category":"automob","pname":"Scooter","price":65000,"pid":23,"count":0},
+   {"category":"automob","pname":"Bike3","price":34000,"pid":24,"count":0}
+   
+
+]

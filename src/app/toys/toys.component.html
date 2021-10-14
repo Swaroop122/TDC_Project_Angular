@@ -1,0 +1,18 @@
+<div align="center">
+    <br>
+    <br>
+    <table class="t1">
+        <tr>
+            <th>Name </th>
+            <th>Price</th>
+            <th>Add To cart</th>
+        </tr>
+        <tr *ngFor="let p of Products" >
+            <td *ngIf="p.category=='toys'">{{p.pname}}</td>
+            <td *ngIf="p.category=='toys'">{{p.price}}</td>
+            <td *ngIf="p.category=='toys'"><button (click)="add(p)">Add</button></td>
+        </tr>
+
+    </table> <br>
+    <br>
+</div>
